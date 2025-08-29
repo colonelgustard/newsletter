@@ -1,35 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <title>Jefferson's Week1 Picks</title>
   <style>
     body { 
-      font-family: Arial, sans-serif; 
+      font-family: 'Anton',Arial, sans-serif; 
       margin:0; padding:0; 
       background:#0B1E3C; color:#222;
     }
-    .mnf {
-      width: 100%;                 /* set size */
-      height: 300px;               /* adjust as needed */
-      background-image: url("your-image.jpg");
-      background-size: cover;      /* cover fills the div */
-      background-position: center; /* center the image */
-      background-repeat: no-repeat;
-      color: white;                /* for text readability */
-      display: flex;               /* optional: center text */
-      align-items: center;
-      justify-content: center;
-    }
 
     .container { 
-      max-width:750px; margin:20px auto; background:#fff; 
+      margin:20px; background:#fff; 
       padding:25px; border-radius:12px; 
       box-shadow:0 4px 12px rgba(0,0,0,0.2);
     }
     .intro { text-align:center; margin-bottom:30px; }
     .intro h1 { font-size:30px; }
-    .intro img { max-width:50%; border-radius:8px; margin:15px auto; display:block; }
+    .intro img { max-width: 100%; border-radius:8px; margin:15px auto; display:block; }
 
     .game { 
       border:2px solid #007A33; border-radius:10px; 
@@ -46,16 +35,15 @@
     .spread { display:block; font-weight:normal; margin-top:4px; color:#b71c1c; }
     .kickoff { display:block; font-weight:600; margin-top:6px; color:#0B1E3C; }
 
-    /* Primetime emphasis */
-    .tnf { border-color:#D12D2D; background:#FCEDED; }
-    .tnf .matchup { border-color:#D12D2D; background:#F9E3E3; }
-    .snf { border-color:#1F618D; background:#E8F6F3; }
-    .snf .matchup { border-color:#1F618D; background:#DEF0EA; }
-    .matchup { border-color:#7D3C98; background:#EDE1F2; }
-
     .endorsement { 
       text-align:center; margin:40px 0; padding:20px; 
       border-radius:12px; background:#fff; border:2px dashed #007A33;
+    }
+    .quip{
+      font-style:italic; color:#555; margin-top:12px;
+    }
+    .intro-paragraph {
+      font-family:Arial; font-size:18px; color:#333; margin-top:15px; line-height:1.5;
     }
     .endorsement img { width:120px; height:120px; border-radius:50%; margin-bottom:12px; border:3px solid #0B1E3C; }
 
@@ -69,7 +57,8 @@
 <body>
   <div class="container">
     <div class="intro">
-      <h1>🚨 Colonel Gustard's Week 1 Picks 🚨</h1>
+      <h1 style="margin-top: 0;">🚨 Colonel Gustard's Week 1 Picks 🚨</h1>
+      <p class="intro-paragraph">Back and feeling refreshed after a quick bye week and ready to get back into some classic NFL action. What's that? You're saying my bye week lasted for 2 years? I don't think that sounds right. Anyway, we I've downloaded and subscribed to the 37 different streaming/entertainment services that will be required to catch every game this year.</p>
       <img src="https://github.com/colonelgustard/newsletter/blob/main/img/goodell.jpg?raw=true" alt="Intro Image">
       <p class="note">Betting lines are not guaranteed to be accurate. This is not financial advice. If you have a gambling problem, call 1-800-GAMBLER.</p>
     </div>
