@@ -2,109 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jefferson's Week 1 Picks</title>
+  <title>Jefferson's Week1 Picks</title>
   <style>
     body { 
       font-family: Arial, sans-serif; 
-      margin:0; 
-      padding:0; 
-      background:#0B1E3C; /* deep navy */
-      color:#222; 
+      margin:0; padding:0; 
+      background:#0B1E3C; color:#222;
     }
+    .mnf {
+      width: 100%;                 /* set size */
+      height: 300px;               /* adjust as needed */
+      background-image: url("your-image.jpg");
+      background-size: cover;      /* cover fills the div */
+      background-position: center; /* center the image */
+      background-repeat: no-repeat;
+      color: white;                /* for text readability */
+      display: flex;               /* optional: center text */
+      align-items: center;
+      justify-content: center;
+    }
+
     .container { 
-      max-width:750px; 
-      margin:20px auto; 
-      background:#fff; 
-      padding:25px; 
-      border-radius:12px; 
-      box-shadow:0 4px 12px rgba(0,0,0,0.2); 
+      max-width:750px; margin:20px auto; background:#fff; 
+      padding:25px; border-radius:12px; 
+      box-shadow:0 4px 12px rgba(0,0,0,0.2);
     }
-    .intro { 
-      text-align:center; 
-      margin-bottom:30px; 
-    }
-    .intro h1 { 
-      font-size:30px;
-    }
-    .intro img { 
-      max-width:50%; 
-      border-radius:8px; 
-      margin:15px auto; 
-      display:block;
-    }
+    .intro { text-align:center; margin-bottom:30px; }
+    .intro h1 { font-size:30px; }
+    .intro img { max-width:50%; border-radius:8px; margin:15px auto; display:block; }
+
     .game { 
-      border:2px solid #007A33; 
-      border-radius:10px; 
-      padding:15px; 
-      margin-bottom:20px; 
-      background:#F5F5F5; 
-      box-shadow:0 2px 6px rgba(0,0,0,0.1); 
+      border:2px solid #007A33; border-radius:10px; 
+      padding:15px; margin-bottom:20px; 
+      background:#F5F5F5; box-shadow:0 2px 6px rgba(0,0,0,0.1);
     }
-    .game img { 
-      display:block; 
-      margin:0 auto 12px auto; 
-      max-width:120px; 
-      height:auto; 
-    }
+    .game img { display:block; margin:0 auto 12px auto; max-width:120px; height:auto; }
+
     .matchup { 
-      font-weight:bold; 
-      margin-bottom:8px; 
-      padding:8px 10px; 
-      border-radius:8px; 
-      background:#e0f0e7; 
-      border:1px solid #007A33; 
-      text-align:center; 
-      color:#0B1E3C;
+      font-weight:bold; margin-bottom:8px; padding:8px 10px; 
+      border-radius:8px; background:#e0f0e7; border:1px solid #007A33; 
+      text-align:center; color:#0B1E3C;
     }
-    .spread { 
-      display:block; 
-      font-weight:normal; 
-      margin-top:4px; 
-      color:#b71c1c; 
-    }
+    .spread { display:block; font-weight:normal; margin-top:4px; color:#b71c1c; }
+    .kickoff { display:block; font-weight:600; margin-top:6px; color:#0B1E3C; }
+
+    /* Primetime emphasis */
+    .tnf { border-color:#D12D2D; background:#FCEDED; }
+    .tnf .matchup { border-color:#D12D2D; background:#F9E3E3; }
+    .snf { border-color:#1F618D; background:#E8F6F3; }
+    .snf .matchup { border-color:#1F618D; background:#DEF0EA; }
+    .matchup { border-color:#7D3C98; background:#EDE1F2; }
+
     .endorsement { 
-      text-align:center; 
-      margin:40px 0; 
-      padding:20px; 
-      border-radius:12px; 
-      background:#fff; 
-      border:2px dashed #007A33; 
+      text-align:center; margin:40px 0; padding:20px; 
+      border-radius:12px; background:#fff; border:2px dashed #007A33;
     }
-    .endorsement img { 
-      width:120px; 
-      height:120px; 
-      border-radius:50%; 
-      margin-bottom:12px; 
-      border:3px solid #0B1E3C; 
-    }
-    .friends { 
-      display:flex; 
-      gap:20px; 
-      justify-content:center; 
-      margin-top:30px; 
-    }
-    .friend { 
-      flex:1; 
-      text-align:center; 
-      padding:15px; 
-      border-radius:10px; 
-      background:#F5F5F5; 
-      border:1px solid #007A33; 
-      box-shadow:0 2px 6px rgba(0,0,0,0.1); 
-    }
-    .friend img { 
-      width:80px; 
-      height:80px; 
-      border-radius:50%; 
-      margin-bottom:8px; 
-      border:2px solid #0B1E3C; 
-    }
-    .note { 
-      font-size:12px; 
-      color:#555; 
-      margin-top:20px; 
-      text-align:center;
-    }
+    .endorsement img { width:120px; height:120px; border-radius:50%; margin-bottom:12px; border:3px solid #0B1E3C; }
+
+    .friends { display:flex; gap:20px; justify-content:center; margin-top:30px; }
+    .friend { flex:1; text-align:center; padding:15px; border-radius:10px; background:#F5F5F5; border:1px solid #007A33; box-shadow:0 2px 6px rgba(0,0,0,0.1); }
+    .friend img { width:80px; height:80px; border-radius:50%; margin-bottom:8px; border:2px solid #0B1E3C; }
+
+    .note { font-size:12px; color:#555; margin-top:20px; text-align:center; }
   </style>
 </head>
 <body>
@@ -115,31 +74,34 @@
       <p class="note">Betting lines are not guaranteed to be accurate. This is not financial advice. If you have a gambling problem, call 1-800-GAMBLER.</p>
     </div>
 
-    <!-- THU, Sept 4 -->
-    <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Cowboys at Eagles">
+    <!-- TNF — Thu, Sept 4 -->
+    <div class="game tnf">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Philadelphia_Eagles_primary_logo.svg" alt="Cowboys at Eagles">
       <div class="matchup">
         Cowboys @ Eagles
+        <span class="kickoff">Thu, Sept 4 — 8:20 PM ET (TNF)</span>
         <span class="spread">Spread: Eagles -6.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
-    <!-- FRI, Sept 5 (São Paulo) -->
+    <!-- Fri, Sept 5 — Brazil -->
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Chiefs at Chargers (São Paulo)">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/Kansas_City_Chiefs_logo.svg" alt="Chiefs at Chargers (São Paulo)">
       <div class="matchup">
         Chiefs @ Chargers (São Paulo)
+        <span class="kickoff">Fri, Sept 5 — 8:00 PM ET</span>
         <span class="spread">Spread: Chiefs -3.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
-    <!-- SUN, Sept 7 (1 p.m. ET) -->
+    <!-- Sun, Sept 7 — 1:00 PM ET window -->
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Raiders at Patriots">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Las_Vegas_Raiders_logo.svg" alt="Raiders at Patriots">
       <div class="matchup">
         Raiders @ Patriots
+        <span class="kickoff">Sun, Sept 7 — 1:00 PM ET</span>
         <span class="spread">Spread: Patriots -3</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
@@ -149,107 +111,119 @@
       <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Steelers at Jets">
       <div class="matchup">
         Steelers @ Jets
+        <span class="kickoff">Sun, Sept 7 — 1:00 PM ET</span>
         <span class="spread">Spread: Steelers -3</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Dolphins at Colts">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/37/Miami_Dolphins_logo.svg" alt="Dolphins at Colts">
       <div class="matchup">
         Dolphins @ Colts
+        <span class="kickoff">Sun, Sept 7 — 1:00 PM ET</span>
         <span class="spread">Spread: Colts -1.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Cardinals at Saints">
+      <img src="https://upload.wikimedia.org/wikipedia/en/7/72/Arizona_Cardinals_logo.svg" alt="Cardinals at Saints">
       <div class="matchup">
         Cardinals @ Saints
+        <span class="kickoff">Sun, Sept 7 — 1:00 PM ET</span>
         <span class="spread">Spread: Cardinals -6</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Giants at Commanders">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/60/New_York_Giants_logo.svg" alt="Giants at Commanders">
       <div class="matchup">
         Giants @ Commanders
+        <span class="kickoff">Sun, Sept 7 — 1:00 PM ET</span>
         <span class="spread">Spread: Commanders -6</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Panthers at Jaguars">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Carolina_Panthers_logo.svg" alt="Panthers at Jaguars">
       <div class="matchup">
         Panthers @ Jaguars
+        <span class="kickoff">Sun, Sept 7 — 1:00 PM ET</span>
         <span class="spread">Spread: Jaguars -3</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Bengals at Browns">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Cincinnati_Bengals_logo.svg" alt="Bengals at Browns">
       <div class="matchup">
         Bengals @ Browns
+        <span class="kickoff">Sun, Sept 7 — 1:00 PM ET</span>
         <span class="spread">Spread: Bengals -6</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Buccaneers at Falcons">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/Tampa_Bay_Buccaneers_logo.svg" alt="Buccaneers at Falcons">
       <div class="matchup">
         Buccaneers @ Falcons
+        <span class="kickoff">Sun, Sept 7 — 1:00 PM ET</span>
         <span class="spread">Spread: Buccaneers -2.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
-    <!-- SUN late window -->
+    <!-- Sun late window -->
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Titans at Broncos">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Tennessee_Titans_logo.svg" alt="Titans at Broncos">
       <div class="matchup">
         Titans @ Broncos
+        <span class="kickoff">Sun, Sept 7 — 4:05 PM ET</span>
         <span class="spread">Spread: Broncos -7.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="49ers at Seahawks">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/San_Francisco_49ers_logo.svg" alt="49ers at Seahawks">
       <div class="matchup">
         49ers @ Seahawks
+        <span class="kickoff">Sun, Sept 7 — 4:05 PM ET</span>
         <span class="spread">Spread: 49ers -2.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Lions at Packers">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Detroit_Lions_logo.svg" alt="Lions at Packers">
       <div class="matchup">
         Lions @ Packers
+        <span class="kickoff">Sun, Sept 7 — 4:25 PM ET</span>
         <span class="spread">Spread: Packers -1.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Texans at Rams">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Houston_Texans_logo.svg" alt="Texans at Rams">
       <div class="matchup">
         Texans @ Rams
+        <span class="kickoff">Sun, Sept 7 — 4:25 PM ET</span>
         <span class="spread">Spread: Rams -2.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
     </div>
 
     <!-- SNF -->
-    <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Ravens at Bills">
+    <div class="game snf">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/Baltimore_Ravens_logo.svg" alt="Ravens at Bills">
       <div class="matchup">
         Ravens @ Bills
+        <span class="kickoff">Sun, Sept 7 — 8:20 PM ET (SNF)</span>
         <span class="spread">Spread: Bills -1.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
@@ -257,9 +231,10 @@
 
     <!-- MNF -->
     <div class="game">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Pittsburgh_Steelers_logo.svg" alt="Vikings at Bears">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Minnesota_Vikings_logo.svg" alt="Vikings at Bears">
       <div class="matchup">
         Vikings @ Bears
+        <span class="kickoff">Mon, Sept 8 — 8:15 PM ET (MNF)</span>
         <span class="spread">Spread: Vikings -1.5</span>
       </div>
       <p><strong>Pick:</strong> Your take here.</p>
@@ -283,7 +258,7 @@
       </div>
     </div>
 
-    <p class="note">Schedule refs: NFL Ops Week 1 (Eagles host Cowboys on Thu, Chiefs–Chargers in São Paulo on Fri, rest on Sun/Mon). Spreads pulled from DraftKings (via FOX Sports) on Aug 25, 2025; update before sending.</p>
+    <p class="note">Times: ESPN Week 1 schedule (ET). Brazil game timing: NFL/Teams (YouTube stream, 8:00 PM ET). Update spreads before sending.</p>
   </div>
 </body>
 </html>
